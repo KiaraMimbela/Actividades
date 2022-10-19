@@ -4,49 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Zoolandia</title>
 </head>
 <body>
     <script>
         var nombre = prompt("Ingresa tu nombre completo");
         console.log("NOMBRE COMPLETO:", nombre);
         
-
-        var edad = parseInt(prompt("Ingresa tu edad",0));
-        console.log("EDAD:", edad);
+        var edad;
+            do{
+                edad = parseInt(prompt("Ingresar edad", "Ingrese valor numerico"));
+            }while (isNaN(edad));
+        console.log("EDAD:", edad)
 
         var direccion = prompt("Ingresa tu dirección");
         console.log("DIRECCIÓN:", direccion);
 
-        var telefono = parseInt(prompt("Ingresa tu número telefonico"));
-        console.log("TÉLEFONO:", telefono);
-
+        var telefono;
+            do{
+                telefono = parseInt(prompt("Ingresar número telefónico", "Ingrese valor numerico"));
+            }while (isNaN(telefono));
+        console.log("TELÉFONO:", telefono);
+        
         var email = prompt("Ingresa un correo");
         console.log("EMAIL:", email);
 
         if(edad < 18 ){
-            console.log("Lo siento, no te puedes registrar :(");
+            console.log("¡Zoolandia, te estará esperando!");
+            console.log("Eres menor de edad, no te puedes registrar :(");
+            alert("Eres menor de edad, no te puedes registrar :(");
+            document.write("¡Zoolandia, te estará esperando!")
+            document.write("<br>");
         }else{
-            console.log("Gracias por registrarte!");
-            document.write("Bienvenido a Zoolandia ");
+            console.log("¡Gracias por registrarte!");
+            document.write("¡Bienvenido a Zoolandia! ");
+            document.write("<br>");
         }
-
-        if (isNaN(edad)) {
-            alert("Es un tipo de dato permitido, Gracias por registrarte (Fuiste hackeado)");
-            console.log("La edad es NaN");
-        }
-        else {
-            alert("No es un tipo de dato permitido");
-            console.log("La edad no es NaN");
-        }
+        
         document.write("Tu nombre es: ", nombre);
         document.write("<br>");
         document.write("Tu edad es: ", edad);
         document.write("<br>");
         document.write("Tu dirección es: ", direccion);
+        document.write("<br>");
+        document.write("Tu número telefónico es: ", telefono);
+        document.write("<br>");
+        document.write("Tu email es: ", email);
+        document.write("<br>");
+        if(edad > 18){
+            document.write("¡Gracias por registrarte!");
+        }else{
+            document.write("Eres menor de edad, no puedes registrarte :(")
+        }
         
-        document.write("Tu número telefonico es: ", telefono);
-        document.write('Tu email es: \n', email);
 
     </script>
 </body>
