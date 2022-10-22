@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //## Operaciones básicas, Tipos de datos, Prompt y Alert
+
+
+        /*Escribir un programa que muestre un prompt donde el usuario ingresa un número,
+        luego muestra otro prompt pidiendo otro número, 
+        finalmente el programa muestra una alerta con el resultado de la suma.*/
+        //HECHO
+        /*var numero_uno = parseInt(prompt("Ingrese un número"));
+        var numero_nuevo = parseInt(prompt("Ingrese un número nuevo"));
+        console.log("El primer número:", numero_uno);
+        console.log("El número nuevo:", numero_nuevo);
+        var total = numero_uno + numero_nuevo;
+        console.log("La suma de los dos números es:", total);
+        alert("La suma de los dos números es " + total); // no funciona si pones la coma */
+        
+        
+
+        /*- Crear un programa donde el usuario ingrese en un prompt la temperatura en Celcius
+        y el programa muestre en una alerta la temperatura en Fahrenheit.*/
+        //formula:  ºF = ºC x 1.8 + 32.
+        //HECHO
+
+        /*var tempCel = parseInt(prompt("Ingrese la temperatura en Celcius"));
+        var tempFah = tempCel * 1.8 + 32;
+        alert("La temperatura en grados Fahrenheit es " + tempFah);*/
+
+
+        //- Pedir un número a un usuario a través de un prompt y luego dividirlo por 10, ejemplo: 5 / 10  igual 0.5
+        //HECHO
+        /*var numero = parseInt(prompt("Ingrese un número"));
+        console.log("El número ingresado es", numero)
+
+        var resultado = numero / 10
+        console.log("El número dividido por 10 es " + resultado);
+        alert("El número dividido por 10 es " + resultado);*/
+
+        //- Si a = [1,2,3] crear un script que determine de muestre un alert del tipo de dato de a.
+        //HECHO
+        /*var a = [1,2,3]
+        console.log(typeof a);
+        alert(" El tipo de dato es " + typeof a);
+        alert("Los datos son " + a);*/
+
+        //- Crear un programa que determine si un número introducido en un Prompt es par o no,
+        // la respuesta será mostrada en una alerta.
+        //HECHO
+        /*var numero = parseInt(prompt("Ingrese un número"));
+        if (numero % 2 == 0) {
+            alert("El número ingresado es par");
+        } else {
+            alert("El número ingresado es impar");
+        }*/
+
+
+        //- Crear un programa que determine si un número introducido en un Prompt es divisible por 5 o no,
+        //mostrar el resultado con console.log
+        //HECHO
+        /*var numero = parseInt(prompt("Ingrese un número"));
+
+        if(numero % 5 == 0 ){
+            console.log("El número " + numero + " si es divisible por 5");
+        } else{
+            console.log("El número " + numero + " no es divisble por 5");
+        }*/
+
+
+        //- Crear un programa que determine si un número introducido en un popup es divisible por 11 y 5 o no, 
+        //mostrar el resultado con console.log ¿popup?
+        //HECHO
+        /*var popup = parseInt(prompt("Ingrese un número"));
+        
+        if (popup % 11 == 0, popup % 5 == 0) {
+            console.log("El número " + popup + " es divisible por 11 y 5.");
+        } else {
+            console.log("El número " + popup + " no es divisible por 11 y 5.");
+        }*/
+
+        //- Crear un programa  que le pida al usuario dos números en un Prompt y luego muestre en un alerta el número mayor.
+        //dos valores en un prompt
+        //HECHO
+        /*var numero1 = parseInt(prompt("Ingrese el primer número"));
+        var numero2 = parseInt(prompt("Ingrese el segundo número"));
+
+        if (numero1 > numero2) {
+            alert("El número mayor es " + numero1);
+        } else {
+            alert("El número mayor es " + numero2);
+        }*/
+
+
+        //- Crear un programa que le pida al usuario primero un  números al usuario a través de un prompt y 
+        //luego un segundo número para luego mostrar en un alerta el número mayor, 
+        //esta vez realizar el ejercicio ocupando un if ternario.
+        //HECHO
+        /*var numero1 = parseInt(prompt("Ingrese el primer número"));
+        var numero2 = parseInt(prompt("Ingrese el segundo número"));
+        (numero1 < numero2)? alert("El número mayor es " + numero2) : alert("El número mayor es " + numero1);*/
+
+
+        //- El siguiente código tiene un error, descubrirlo y arreglarlo:
+        //~~~javascript
+	    // Obtener edad
+        //HECHO
+        /*var edad = parseInt(prompt("Ingresa tu edad"));
+
+        if (edad < 13) {
+            console.log("Eres un niño");
+            alert("Eres un niño");
+        } else if (edad < 18){
+            console.log("Eres un adolescente");
+            alert("Eres un adolescente");
+        }else{
+            console.log("Eres un adulto");
+            alert("Eres un adulto");
+        }*/
+
+        //- Mostrar todos los números de 1 a n aumentando de 1 en 1 donde n lo ingresa el usuario en un prompt.
+        //HECHO
+        /*var limite = parseInt(prompt("Ingrese un número"));
+
+        for (let i = 1 ; i <= limite; i++){
+            console.log(i);
+        }*/
+
+
+        //- Mostrar todos los números de 1 a N aumentando de 2 en 2 donde n lo ingresa el usuario en un prompt.
+        //HECHO
+
+        /*var limi = parseInt(prompt("Ingrese un número"));
+
+        for (let i = 0; i <= limi; i++) {
+            i += 1;
+            console.log(i);
+        }*/
+        
+
+        //Mostrar todos los números de N a 1 disminuyendo de 1 en 1 donde n lo ingresa el usuario en un prompt.
+        //HECHO
+
+        /*var numDec = parseInt(prompt("Ingrese un número"));
+        console.log(numDec);
+        let i = 1;
+        while (numDec > i){
+            numDec--;
+            console.log(numDec)
+        }*/
+
+        //Escribir utilizando console.log la tabla del 9 hasta 9x10.
+        /*for (i = 0; i < 11; i++) {
+            console.table("9 x", i, "=", 9 * i);
+        }*/
+
+
+
+
+
+    </script>
+</body>
+</html>
