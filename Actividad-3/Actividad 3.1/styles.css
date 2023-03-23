@@ -9,6 +9,7 @@ nav, aside {
 ul li a {
     color: lightcoral;
     text-decoration: none;
+    padding: 10px;
 }
 
 ul li a:hover {
