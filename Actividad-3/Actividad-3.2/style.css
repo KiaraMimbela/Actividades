@@ -1,0 +1,25 @@
+body {
+    font-family: "Monserrat", sans-serif;
+}
+
+h1 {
+    font-size: 2.6em;
+    color: #224291;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+p {
+    color: #666;
+}
+
+#txt-h1-bold {
+    color: #21408c;
+}
+
+
+
+h2 {
+    color: #224baf;
+    font-weight: normal;
+}
