@@ -1,0 +1,47 @@
+/*formato de nav y aside*/
+nav, aside {
+    padding: 5px;
+    background-color:  rgba(72, 153, 224, 0.158);
+    border-radius: 20px;
+}
+
+/*color y efecto de enlaces en nav y aside*/
+ul li a {
+    color: lightcoral;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: yellowgreen;
+    cursor: pointer;
+}
+
+/*formato de los enlaces*/
+li {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+/*formato de textos*/
+h1, h2 {
+    color: rgb(114, 165, 209);
+}
+
+/*formato de imagenes*/
+main img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+/*formato de footer*/
+footer ul li {
+    color: gray;
+}
+
+h3 {
+    color:   rgb(114, 165, 209);
+}
