@@ -1,5 +1,6 @@
 body {
     font-family: "Monserrat", sans-serif;
+    margin: 0 30% 0 30%;
 }
 
 h1 {
@@ -7,19 +8,62 @@ h1 {
     color: #224291;
     font-weight: bold;
     line-height: 28px;
+    margin-bottom:  0.2em;
+}
+
+img {
+    padding: 1em;
+    border: 1px solid #cbcbcb;
+    width: 36em;
 }
 
 p {
     color: #666;
 }
 
-#txt-h1-bold {
+#txt-p1-bold {
     color: #21408c;
 }
 
+ol li::marker{
+    color: #687eb2;
+}
 
+ol {
+    color: #666;
+    padding-left: 1em;
+}
 
 h2 {
+    padding-top: 1em;
     color: #224baf;
     font-weight: normal;
+}
+
+/*Formato de Table*/
+table {
+    text-align: center;
+    border-spacing:0;
+}
+
+table thead th {
+    color: #fff;
+    font-weight: 500;
+    background-color: #284fac;
+    height: 5em;
+    padding: 0.1em 0.7em;
+}
+
+.tb-col1 {
+    color: #224baf;
+    background-color: #c6d0e5;
+    text-align: start;
+    padding-left: 0.5em;
+    width: 11em;
+}
+
+table tbody td {
+    color: #666;
+    height: 3em;
+    border: 1px solid #d9dfeb
 }
